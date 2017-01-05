@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>Elasticsearch</Name>
+  <Description>
+  Elasticsearch
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/usr/share/elasticsearch/data[/b] This is where the Elasticsearch will store its index data.
+  </Description>
+  <Overview>
+  Elasticsearch is a search engine based on Lucene. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. Elasticsearch is the most popular enterprise search engine followed by Apache Solr, also based on Lucene.
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/_/elasticsearch/</Registry>
+  <Repository>elasticsearch:2.4</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>none</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/elasticsearch/data</HostDir>
+      <ContainerDir>/usr/share/elasticsearch/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/elasticsearch-icon.png</Icon>
+</Containers>
