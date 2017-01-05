@@ -2,7 +2,7 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Productivity: Tools:</Category>
-  <Name>Elasticsearch</Name>
+  <Name>elasticsearch</Name>
   <Description>
   Elasticsearch
   [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
@@ -17,7 +17,7 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>none</Mode>
+    <Mode>bridge</Mode>
   </Networking>
   <Environment>
     <Variable>
