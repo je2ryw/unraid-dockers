@@ -43,5 +43,5 @@
   <WebUI>http://[IP]:[PORT:443]/</WebUI>
   <Banner>https://about.gitlab.com/images/wordmark_inverted_small.png</Banner>
   <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/gitlab-icon.png</Icon>
-  <ExtraParams>--expose 22 --expose 80 --expose 88 --expose 443 -link elasticsearch:elasticsearch</ExtraParams>
+  <ExtraParams>--expose 22 --expose 80 --expose 88 --expose 443 --link elasticsearch:elasticsearch</ExtraParams>
 </Container>
