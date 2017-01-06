@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>gitlab-runner</Name>
+  <Description>
+    Gitlab Runner runs tests and sends the results to GitLab. GitLab CI is the open-source continuous integration service included with GitLab that coordinates the testing. The old name of this project was GitLab CI Multi Runner but please use "GitLab Runner" (without CI) from now on.
+  </Description>
+  <Overview>
+    Gitlab Runner runs tests and sends the results to GitLab. GitLab CI is the open-source continuous integration service included with GitLab that coordinates the testing. The old name of this project was GitLab CI Multi Runner but please use "GitLab Runner" (without CI) from now on.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/gitlab/gitlab-runner/</Registry>
+  <Repository>gitlab/gitlab-runner:alpine</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gitlab-runner/config</HostDir>
+      <ContainerDir>/etc/gitlab-runner</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>https://about.gitlab.com/images/wordmark_inverted_small.png</Banner>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/gitlab-runner-icon.png</Icon>
+  <ExtraParams>-v /var/run/docker.sock:/var/run/docker.sock</ExtraParams>
+</Container>
