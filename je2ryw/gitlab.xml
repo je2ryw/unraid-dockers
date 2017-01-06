@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>gitlab</Name>
+  <Description>
+    Gitlab is a git repository server that can be hosted on your own network so that you can maintain and keep your source code privately.
+  </Description>
+  <Overview>
+    Gitlab is a git repository server that can be hosted on your own network so that you can maintain and keep your source code privately.
+    This docker has the ability to enable https, send emails using gmail, and perform nightly backups.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/teapotz/gitlab/</Registry>
+  <Repository>teapotz/gitlab</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gitlab/data</HostDir>
+      <ContainerDir>/var/opt/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gitlab/logs</HostDir>
+      <ContainerDir>/var/log/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gitlab/config</HostDir>
+      <ContainerDir>/etc/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:443]/</WebUI>
+  <Banner>https://about.gitlab.com/images/wordmark_inverted_small.png</Banner>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/gitlab-icon.png</Icon>
+  <ExtraParams>--expose 22 --expose 80 --expose 88 --expose 443 -link elasticsearch:elasticsearch</ExtraParams>
+</Container>
