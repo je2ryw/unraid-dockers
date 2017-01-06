@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>haproxy</Name>
+  <Description>
+    HAProxy is free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers. It is written in C and has a reputation for being fast and efficient in terms of processor and memory usage.
+  </Description>
+  <Overview>
+    HAProxy is free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers. It is written in C and has a reputation for being fast and efficient in terms of processor and memory usage.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/teapotz/haproxy/</Registry>
+  <Repository>teapotz/haproxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>    
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/haproxy/conf/haproxy.cfg</HostDir>
+      <ContainerDir>/etc/haproxy/haproxy.cfg</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/haproxy/conf/ssl</HostDir>
+      <ContainerDir>/usr/local/etc/haproxy</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>  
+  </Data>
+  <WebUI>http://[IP]:[PORT:443]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/haproxy-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
