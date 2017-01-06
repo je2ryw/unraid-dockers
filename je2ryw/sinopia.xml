@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>sinopia</Name>
+  <Description>
+    Sinopia allows you to have a local npm registry with zero configuration. You don't have to install and replicate an entire CouchDB database. Sinopia keeps its own small database and, if a package doesn't exist there, it asks npmjs.org for it keeping only those packages you use.
+  </Description>
+  <Overview>
+    Sinopia allows you to have a local npm registry with zero configuration. You don't have to install and replicate an entire CouchDB database. Sinopia keeps its own small database and, if a package doesn't exist there, it asks npmjs.org for it keeping only those packages you use.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/teapotz/sinopia/</Registry>
+  <Repository>teapotz/sinopia</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sinopia/config/htpasswd</HostDir>
+      <ContainerDir>/opt/sinopia/htpasswd</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sinopia/config/config.yaml</HostDir>
+      <ContainerDir>/opt/sinopia/config.yaml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sinopia/data</HostDir>
+      <ContainerDir>/opt/sinopia/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>    
+  </Data>
+  <WebUI>http://[IP]:[PORT:443]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/sinopia-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
