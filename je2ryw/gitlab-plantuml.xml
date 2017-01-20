@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>gitlab-plantuml</Name>
+  <Description>
+    Render PlantUML from Github Gist and Gitlab.
+  </Description>
+  <Overview>
+    Render PlantUML from Github Gist and Gitlab.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/teapotz/plantuml-gitlab/</Registry>
+  <Repository>teapotz/plantuml-gitlab</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>APPLICATION_BASE_URL</Name>
+      <Value>http://ulm.acme.com</Value>
+    </Variable>
+    <Variable>
+      <Name>GITLAB_URL</Name>
+      <Value>https://gitlab.acme.com</Value>
+    </Variable>
+    <Variable>
+      <Name>GITLAB_USER_TOKEN</Name>
+      <Value>READ-ONLY-USER-TOKEN</Value>
+    </Variable>        
+  </Environment>
+  <Banner>https://about.gitlab.com/images/wordmark_inverted_small.png</Banner>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/gitlab-plantuml-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
