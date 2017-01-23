@@ -10,8 +10,8 @@
     Gitlab is a git repository server that can be hosted on your own network so that you can maintain and keep your source code privately.
     This docker has the ability to enable https, send emails using gmail, and perform nightly backups.
   </Overview>
-  <Registry>https://registry.hub.docker.com/u/teapotz/gitlab/</Registry>
-  <Repository>teapotz/gitlab</Repository>
+  <Registry>https://registry.hub.docker.com/u/gitlab/gitlab-ee/</Registry>
+  <Repository>gitlab/gitlab-ee</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
