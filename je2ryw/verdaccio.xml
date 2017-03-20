@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>verdaccio</Name>
+  <Description>
+    Verdaccio allows you to have a local npm registry with zero configuration. You don't have to install and replicate an entire CouchDB database. Verdaccio keeps its own small database and, if a package doesn't exist there, it asks npmjs.org for it keeping only those packages you use.
+  </Description>
+  <Overview>
+    Verdaccio allows you to have a local npm registry with zero configuration. You don't have to install and replicate an entire CouchDB database. Verdaccio keeps its own small database and, if a package doesn't exist there, it asks npmjs.org for it keeping only those packages you use.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/verdaccio/verdaccio/</Registry>
+  <Repository>verdaccio/verdaccio</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/verdaccio/config</HostDir>
+      <ContainerDir>/verdaccio/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/verdaccio/data</HostDir>
+      <ContainerDir>/verdaccio/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>    
+  </Data>
+  <WebUI>http://[IP]:[PORT:443]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/verdaccio-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
