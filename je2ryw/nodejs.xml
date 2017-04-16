@@ -41,5 +41,5 @@
   </Data>
   <WebUI>http://[IP]:[PORT:443]/</WebUI>
   <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/nodejs-icon.png</Icon>
-  <ExtraParams>-d -it</ExtraParams>
+  <ExtraParams>-it</ExtraParams>
 </Container>
