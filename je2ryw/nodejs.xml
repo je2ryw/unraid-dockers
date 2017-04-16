@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>nodejs</Name>
+  <Description>
+    Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+  </Description>
+  <Overview>
+    Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/teapotz/node/</Registry>
+  <Repository>teapotz/node:7-dev</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nodejs/app</HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nodejs/.ssh</HostDir>
+      <ContainerDir>/root/.ssh</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nodejs/.npmrc</HostDir>
+      <ContainerDir>/root/.npmrc</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>    
+  </Data>
+  <WebUI>http://[IP]:[PORT:443]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/nodejs-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
