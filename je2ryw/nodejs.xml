@@ -31,15 +31,15 @@
     <Volume>
       <HostDir>/mnt/user/appdata/nodejs/.ssh</HostDir>
       <ContainerDir>/root/.ssh</ContainerDir>
-      <Mode>r</Mode>
+      <Mode>ro</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/nodejs/.npmrc</HostDir>
       <ContainerDir>/root/.npmrc</ContainerDir>
-      <Mode>r</Mode>
+      <Mode>ro</Mode>
     </Volume>    
   </Data>
   <WebUI>http://[IP]:[PORT:443]/</WebUI>
   <Icon>https://raw.githubusercontent.com/je2ryw/unraid-dockers/master/je2ryw/images/nodejs-icon.png</Icon>
-  <ExtraParams></ExtraParams>
+  <ExtraParams>-d -it</ExtraParams>
 </Container>
